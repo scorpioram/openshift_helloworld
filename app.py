@@ -10,6 +10,11 @@ class HelloWorld(Resource):
     def get(self):
         return 'Hello, World!'
 
+class HelloWorldRoot(Resource):
+    # noinspection PyMethodMayBeStatic
+    def get(self):
+        return 'Hello, World! Root'
 
 api.add_resource(HelloWorld, '/hello')
+api.add_resource(HelloWorldRoot, '/')
 app.run()
