@@ -18,5 +18,6 @@ class HelloWorldRoot(Resource):
 api.add_resource(HelloWorld, '/hello')
 api.add_resource(HelloWorldRoot, '/')
 
+
 if __name__ == '__main__':
     app.run(host="localhost", port=8080)
